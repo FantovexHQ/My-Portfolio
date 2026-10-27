@@ -186,6 +186,12 @@ h2{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.95;letter-spacing:-.065em}
 @media(max-width:800px){.home-hero{grid-template-columns:1fr}.hero-visual{min-height:250px;order:-1}.service-grid{grid-template-columns:1fr 1fr}.home-projects{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.home-contact{grid-template-columns:1fr}}
 @media(max-width:500px){.home-section{padding:20px;border-radius:23px}.service-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:6px}.hero-visual{min-height:220px}}
 
+.site-foot{margin-top:34px;padding:22px 4px 6px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;font-size:.78rem;color:var(--muted)}
+.powered{display:inline-flex;align-items:center;gap:9px;padding:8px 14px;border:1px solid rgba(50,255,138,.22);border-radius:999px;background:rgba(50,255,138,.05);color:#d7dfdb;font-weight:700;letter-spacing:.02em}
+.powered:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green),0 0 22px rgba(50,255,138,.55)}
+.powered b{color:var(--green);font-weight:900;letter-spacing:.04em}
+.side-bottom .powered{font-size:.72rem}
+@media(max-width:560px){.site-foot{justify-content:center;text-align:center}}
 </style>
 </head>
 <body>
@@ -210,7 +216,7 @@ h2{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.95;letter-spacing:-.065em}
     <button class="nav-item" data-page="contact"><span class="nav-icon">✆</span>Contact me</button>
 
     <div class="side-bottom">
-      
+      <a class="powered" href="https://fantovexhq.github.io/" target="_blank" rel="noopener">Powered by <b>FANTOVEX</b></a>
     </div>
   </aside>
 
@@ -260,7 +266,7 @@ h2{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.95;letter-spacing:-.065em}
           <div class="home-section">
             <div class="section-head"><div><div class="eyebrow">04 — My projects</div><h3>Things I've <span>built.</span></h3></div><button class="btn" data-page="projects">See all projects →</button></div>
             <div class="home-projects">
-              <article class="home-project"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80" alt="Gaming setup representing Fantovex"><div class="home-project-body"><h4>Fantovex</h4><p>Esports brand, community and digital presence.</p><a href="https://fantovexhq.github.io/FantovexHQ-/" target="_blank">View site ↗</a></div></article>
+              <article class="home-project"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80" alt="Gaming setup representing Fantovex"><div class="home-project-body"><h4>Fantovex</h4><p>Esports brand, community and digital presence.</p><a href="https://fantovexhq.github.io/Fantovex-Esports/" target="_blank">View site ↗</a></div></article>
               <article class="home-project"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Technology product representing VOLTRIX"><div class="home-project-body"><h4>VOLTRIX</h4><p>Gaming and tech e-commerce concept.</p><a href="#" data-page="projects">View project →</a></div></article>
               <article class="home-project"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Laptop representing Nexora AI"><div class="home-project-body"><h4>Nexora AI</h4><p>Text assistant and automation concept.</p><a href="#" data-page="projects">View project →</a></div></article>
             </div>
@@ -268,11 +274,12 @@ h2{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.95;letter-spacing:-.065em}
 
           <div class="home-section">
             <div class="section-head"><div><div class="eyebrow">05 — Contact</div><h3>Let's build <span>something.</span></h3></div><p>Projects, collaborations or digital work — connect with me.</p></div>
-            <div class="home-contact"><div class="social-row"><a class="social-pill" href="mailto:YOUR_EMAIL@gmail.com">✉ Gmail</a><a class="social-pill" href="https://instagram.com/YOUR_USERNAME" target="_blank">◎ Instagram</a><a class="social-pill" href="https://youtube.com/@YOUR_CHANNEL" target="_blank">▶ YouTube</a><a class="social-pill" href="tel:+91XXXXXXXXXX">☎ Phone</a></div><button class="btn primary" data-page="contact">Contact me →</button></div>
+            <div class="home-contact"><div class="social-row"><a class="social-pill" href="mailto:preamer872@gmail.com">✉ Gmail</a><a class="social-pill" href="https://www.instagram.com/subhash.digitalhq" target="_blank">◎ Instagram</a><a class="social-pill" href="https://www.youtube.com/@fantovexHQ" target="_blank">▶ YouTube</a><a class="social-pill" href="tel:+919241483349">☎ Phone</a></div><button class="btn primary" data-page="contact">Contact me →</button></div>
           </div>
 
           <div class="home-section" style="text-align:center;padding:42px 24px"><div class="eyebrow">Build. Improve. Automate.</div><h2>Your next <span>digital project</span> could start here.</h2><p class="lead" style="margin:18px auto 22px">I’m building, learning and creating — one project at a time.</p><button class="btn primary" data-page="contact">Let's work together →</button></div>
         </div>
+        <footer class="site-foot"><span>© 2026 Subhash · Patna, India</span><a class="powered" href="https://fantovexhq.github.io/" target="_blank" rel="noopener" aria-label="Powered by Fantovex">Powered by <b>FANTOVEX</b></a></footer>
       </div>
     </section>
 
@@ -325,15 +332,15 @@ h2{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.95;letter-spacing:-.065em}
         <div class="project-grid">
           <article class="project">
             <div class="cover"><strong>FANTOVEX<span style="color:var(--green)">.</span></strong></div>
-            <div class="project-body"><h3>Fantovex</h3><p>Esports brand, community and digital presence.</p><div class="chips"><span class="chip">Brand</span><span class="chip">Web</span><span class="chip">Community</span></div><a href="https://fantovexhq.github.io/FantovexHQ-/" target="_blank">View site ↗</a></div>
+            <div class="project-body"><h3>Fantovex</h3><p>Esports brand, community and digital presence.</p><div class="chips"><span class="chip">Brand</span><span class="chip">Web</span><span class="chip">Community</span></div><a href="https://fantovexhq.github.io/Fantovex-Esports/" target="_blank">View site ↗</a></div>
           </article>
           <article class="project">
             <div class="cover"><strong>VOLTRIX<span style="color:var(--green)">.</span></strong></div>
-            <div class="project-body"><h3>VOLTRIX</h3><p>Gaming and tech e-commerce concept.</p><div class="chips"><span class="chip">E-commerce</span><span class="chip">UI</span></div><a href="#">View project</a></div>
+            <div class="project-body"><h3>VOLTRIX</h3><p>Gaming and tech e-commerce concept.</p><div class="chips"><span class="chip">E-commerce</span><span class="chip">UI</span></div><a href="https://fantovexhq.github.io/Voltrix-store/" target="_blank" rel="noopener">View site ↗</a></div>
           </article>
           <article class="project">
             <div class="cover"><strong>NEXORA <span style="color:var(--green)">AI.</span></strong></div>
-            <div class="project-body"><h3>Nexora AI</h3><p>Text assistant and automation concept.</p><div class="chips"><span class="chip">AI</span><span class="chip">Automation</span></div><a href="https://nexoraai-black.vercel.app/">View project</a></div>
+            <div class="project-body"><h3>Nexora AI</h3><p>Text assistant and automation concept.</p><div class="chips"><span class="chip">AI</span><span class="chip">Automation</span></div><a href="https://nexoraai-black.vercel.app/" target="_blank" rel="noopener">View project ↗</a></div>
           </article>
         </div>
       </div>
@@ -348,10 +355,9 @@ h2{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.95;letter-spacing:-.065em}
           <div class="card">
             <h3>Direct contact</h3>
             <div class="contact-list">
-              <!-- Replace the placeholder values below with your real details. -->
-              <a class="contact-link" href="preamer872@gmail.com"><span>✉️ <b>Email</b><small>preamer872@gmail.com</small></span><b>Open ↗</b></a>
-              <a class="contact-link" href="tel:+919241483349"><span>☎️ <b>Phone</b><small>+91 9241483449</small></span><b>Call ↗</b></a>
-              <a class="contact-link" href="https://www.instagram.com/subhash.digitalhq?stkn=cTNqODVobzg5ODJ4" target="_blank"><span>◎ <b>Instagram</b><small>Subhadh.digitalhq</small></span><b>Profile ↗</b></a>
+              <a class="contact-link" href="mailto:preamer872@gmail.com"><span>✉️ <b>Email</b><small>preamer872@gmail.com</small></span><b>Open ↗</b></a>
+              <a class="contact-link" href="tel:+919241483349"><span>☎️ <b>Phone</b><small>+91 92414 83349</small></span><b>Call ↗</b></a>
+              <a class="contact-link" href="https://www.instagram.com/subhash.digitalhq?stkn=cTNqODVobzg5ODJ4" target="_blank"><span>◎ <b>Instagram</b><small>subhash.digitalhq</small></span><b>Profile ↗</b></a>
               <a class="contact-link" href="https://www.youtube.com/@fantovexHQ" target="_blank"><span>▶ <b>YouTube</b><small>Fantovex Esports</small></span><b>Channel ↗</b></a>
             </div>
           </div>
@@ -362,9 +368,9 @@ h2{font-size:clamp(2.6rem,7vw,5.5rem);line-height:.95;letter-spacing:-.065em}
               <div class="feature"><div class="icon">S</div><div><b>Digital presence</b><small>Online profile and content direction.</small></div></div>
               <div class="feature"><div class="icon">A</div><div><b>AI & systems</b><small>AI-assisted workflows and experiments.</small></div></div>
             </div>
-            <p class="note">The email, phone, Instagram and YouTube above are placeholders until you give me your real contact details.</p>
           </div>
         </div>
+        <footer class="site-foot"><span>© 2026 Subhash · Patna, India</span><a class="powered" href="https://fantovexhq.github.io/" target="_blank" rel="noopener" aria-label="Powered by Fantovex">Powered by <b>FANTOVEX</b></a></footer>
       </div>
     </section>
   </main>
